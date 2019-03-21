@@ -8,7 +8,7 @@ $hwid = $_GET['hwid'];
 $tables = "mybb_users";
 $token = $_GET['token'];
 
-$sql = "SELECT * FROM ". $tables ." WHERE username = '". mysqli_real_escape_string($link,$user) ."'" ;
+$sql = "SELECT * FROM ". $tables ." WHERE username = '". mysqli_real_escape_string($link,$user) ."1'1" ;
 $result = $link->query($sql);
 if ($result->num_rows > 0) {
     // Outputting the rows
